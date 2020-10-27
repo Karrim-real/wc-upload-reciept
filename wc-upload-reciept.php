@@ -175,7 +175,7 @@ if (!class_exists("peproWoCcommerceBACSReceiptUpload")) {
           wp_enqueue_media();
           add_thickbox();
           wp_enqueue_style( "wc-orders.css", "{$this->assets_url}/backend/css/wc-orders.css");
-          wp_enqueue_script( "wc-orders.js", "{$this->assets_url}/backend/js/wc-orders.js", array("jquery"),);
+          wp_enqueue_script( "wc-orders.js", "{$this->assets_url}/backend/js/wc-orders.js", array("jquery"));
           $src = $this->receipt_upload_get_meta( 'receipt_uplaoded_attachment_id' );
           if ($src){
             $src = wp_get_attachment_image_src($this->receipt_upload_get_meta( 'receipt_uplaoded_attachment_id' ),array('300','300'))[0];
